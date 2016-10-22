@@ -121,7 +121,7 @@
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _react = __webpack_require__(3);
 
@@ -130,14 +130,51 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.Home = _react2.default.createClass({
-	  displayName: 'Home',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      'Home'
-	    );
-	  }
+	    displayName: "Home",
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "pa4 black-80" },
+	            _react2.default.createElement(
+	                "form",
+	                { action: "sign-up_submit", method: "get" },
+	                _react2.default.createElement(
+	                    "fieldset",
+	                    { id: "sign_up", className: "ba b--transparent ph0 mh0" },
+	                    _react2.default.createElement(
+	                        "legend",
+	                        { className: "ph0 mh0 fw6 clip" },
+	                        "Sign Up"
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "mt3" },
+	                        _react2.default.createElement(
+	                            "label",
+	                            { className: "db fw4 lh-copy f6" },
+	                            "Email address"
+	                        ),
+	                        _react2.default.createElement("input", { className: "pa2 input-reset ba bg-transparent w-100 measure", type: "email", name: "email-address", id: "email-address" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "mt3" },
+	                        _react2.default.createElement(
+	                            "label",
+	                            { className: "db fw4 lh-copy f6" },
+	                            "Password"
+	                        ),
+	                        _react2.default.createElement("input", { className: "b pa2 input-reset ba bg-transparent", type: "password", name: "password", id: "password" })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "mt3" },
+	                    _react2.default.createElement("input", { className: "b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6", type: "submit", value: "Sign Up" })
+	                )
+	            )
+	        );
+	    }
 	});
 
 /***/ },
